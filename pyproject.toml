@@ -1,0 +1,17 @@
+[project]
+name = "ia-n-uv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "chiarorosa", email = "pablo.chiaro.rosa@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ia-n-uv = "ia_n_uv:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
