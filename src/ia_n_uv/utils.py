@@ -11,8 +11,17 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Meu pacote python xyz")
 
     parser.add_argument(
-        "problema",
-        help="Problema a ser resolvido",
+        "-p",
+        "--problema",
+        required=True,
+        help="Problema exemplo a ser resolvido",
+    )
+
+    parser.add_argument(
+        "-u",
+        "--url",
+        required=False,
+        help="URL para acessar o arquivo texto exemplo",
     )
 
     return parser.parse_args()
